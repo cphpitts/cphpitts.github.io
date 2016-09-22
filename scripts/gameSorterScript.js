@@ -17,11 +17,13 @@ var option1El = document.getElementById('option1');
 var option2El = document.getElementById('option2');
 option1El.addEventListener('click', compareOptions, false);
 option2El.addEventListener('click', compareOptions, false);
+var startEl = document.getElementById('startButton');
+startEl.addEventListener('click', startSorting, false);
 
 // Randomize List and Set Up Initial Options
 function startSorting() {
 	var originalList = document.getElementById('gameList').value;
-	initialList = originalList.split(",");	
+	initialList = originalList.split("\n");	
 	unsortedListLength = initialList.length;
 	for (i=0; i < unsortedListLength; i++) {
 		var randomNumber = Math.floor(Math.random() * initialList.length); 
