@@ -4,10 +4,10 @@ var finalList = [];
 var unsortedList = [];
 var unsortedListLength = 0;
 var unsortedCounter = 1;
+var memoryList = [];
 var finalBottom = 0;
 var finalTop = finalList.length;
 var finalCounter = Math.floor((finalBottom + finalTop)/2);
-var newCounter;
 
 // Set content elements
 var inputEl = document.getElementById('listInput');
@@ -54,34 +54,51 @@ function compareOptions(e) {
 		} else {
 			finalList.splice(finalCounter, 0, unsortedList[unsortedCounter]);	
 		}
+		memoryList = [];
 		unsortedCounter++;
 		finalBottom = 0;
 		finalTop = finalList.length;
 		finalCounter = Math.floor((finalBottom + finalTop)/2);
 	} else {		
 		if(e.target.id == "option1") {
-			newCounter = finalCounter;
+			memoryList[finalCounter] = "winner";
 			finalBottom = finalCounter;
 			finalCounter = Math.floor((finalBottom + finalTop)/2);
-			if (newCounter == finalCounter) {
+			if (memoryList[finalCounter] == "winner") {
 				finalList.splice(finalCounter + 1, 0, unsortedList[unsortedCounter]);
 				unsortedCounter++;
 				finalBottom = 0;
 				finalTop = finalList.length;
 				finalCounter = Math.floor((finalBottom + finalTop)/2);
-			} 			
-			
-		} else {
-			newCounter = finalCounter;
-			finalTop = finalCounter;
-			finalCounter = Math.floor((finalBottom + finalTop)/2);
-			if (newCounter == finalCounter) {
+				memoryList = [];
+			} else if (memoryList[finalCounter] == "loser") {
 				finalList.splice(finalCounter, 0, unsortedList[unsortedCounter]);
 				unsortedCounter++;
 				finalBottom = 0;
 				finalTop = finalList.length;
 				finalCounter = Math.floor((finalBottom + finalTop)/2);
-			} 
+				memoryList = [];
+			} 			
+			
+		} else {
+			memoryList[finalCounter] = "loser";
+			finalTop = finalCounter;
+			finalCounter = Math.floor((finalBottom + finalTop)/2);
+			if (memoryList[finalCounter] == "loser") {
+				finalList.splice(finalCounter, 0, unsortedList[unsortedCounter]);
+				unsortedCounter++;
+				finalBottom = 0;
+				finalTop = finalList.length;
+				finalCounter = Math.floor((finalBottom + finalTop)/2);
+				memoryList = [];
+			} else if (memoryList[finalCounter] == "winner") {
+				finalList.splice(finalCounter + 1, 0, unsortedList[unsortedCounter]);
+				unsortedCounter++;
+				finalBottom = 0;
+				finalTop = finalList.length;
+				finalCounter = Math.floor((finalBottom + finalTop)/2);
+				memoryList = [];
+			}
 		}
 	}
 	setOptions();
@@ -102,10 +119,12 @@ function endProgram(){
 // Show console logs
 function writeToLog() {
 console.log('------------------');
+console.log(unsortedList[unsortedCounter] + ' vs ' + finalList[finalCounter]);
 console.log(unsortedList);
 console.log("unsortedCounter: " + unsortedCounter);
 console.log(finalList);
 console.log("finalBottom: " + finalBottom);
 console.log("finalTop: " + finalTop);
 console.log("finalCounter: " + finalCounter);
+console.log("memory: " + memoryList[finalCounter]);
 }
