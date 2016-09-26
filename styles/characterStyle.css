@@ -56,6 +56,7 @@ div#characterSkills {
     position: absolute;
     top: 481px;
     left: 117px;
+	width: 811px;
 }
 
 #characterSkills input {
