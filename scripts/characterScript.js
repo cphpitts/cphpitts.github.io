@@ -56,7 +56,7 @@ function modifyResults() {
 	}
 	
 	for (i=0; i<intellectSkills.length; i++) {
-		greenDice = Math.max(intellectEl.value, allSkills[intellectSkills[i]].value) - Math.min(agilityEl.value, allSkills[intellectSkills[i]].value);
+		greenDice = Math.max(intellectEl.value, allSkills[intellectSkills[i]].value) - Math.min(intellectEl.value, allSkills[intellectSkills[i]].value);
 		yellowDice = Math.min(intellectEl.value, allSkills[intellectSkills[i]].value);
 		
 		allResults[intellectSkills[i]].innerHTML = "";
