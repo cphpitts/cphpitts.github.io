@@ -2,7 +2,7 @@
 /* CSS Document */
 
 #characterSheet {
-    background-image: url(character-sheet.jpg);
+    background-image: url(../character-sheet.jpg);
     width: 1000px;
     height: 1298px;
     background-size: cover;
