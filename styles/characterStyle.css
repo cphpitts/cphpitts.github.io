@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+#characterSheet {
+    background-image: url(character-sheet.jpg);
+    width: 1000px;
+    height: 1298px;
+    background-size: cover;
+}
+
+.results div {
+    height: 8px;
+    width: 20px;
+    float: left;
+    border: 1px black solid;
+}
+
+.greenDie {
+    background-color: green;
+}
+
+.yellowDie {
+    background-color: yellow;
+}
+
+#characteristicStat {
+    position: absolute;
+    top: 332px;
+    left: 138px;
+}
+
+#characteristicStat div {
+    height: 68px;
+    width: 68px;
+    text-align: center;
+    font-size: 42px;
+    margin-left: 69px;
+    float: left;
+}
+
+#characteristicStat input {
+    height: 68px;
+    width: 68px;
+    border-radius: 55px;
+    border: red 2px solid;
+    text-align: center;
+    font-size: 42px;
+    display: block;
+}
+
+#characteristicStat div:first-child {
+    margin-left:0px;
+}
+
+div#characterSkills {
+    position: absolute;
+    top: 481px;
+    left: 117px;
+}
+
+#characterSkills input {
+    margin-left: 136px;
+    width: 95px;
+    height: 12px;
+    /* margin-top: 4px; */
+    float: left;
+}
+
+#characterSkills > div > div {
+    height: 19px;
+    padding-top: 4px;
+}
+
+.results {
+    float: left;
+    width: 121px;
+    height: 20px;
+    margin-left: 35px;
+    padding-top: 3px;
+}
+
+#characterSkills > div {
+    float: left;
+}
+
+div#generalSkills {
+    margin-right: 29px;
+}
+
+div#knowledgeSkills {
+    margin-top: 44px;
+}
