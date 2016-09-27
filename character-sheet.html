@@ -10,10 +10,35 @@
 </head>
 
 <body>
-
 <div id="characterSheet">
+    <div id="characterBasics">
+        <div id="characterName"><input type="text"></div> 
+        <div id="characterRace">
+            <select>
+                <option value="raceBothan">Bothan</option>
+                <option value="raceDroid">Droid</option>
+                <option value="raceGand">Gand</option>
+                <option value="raceHuman">Human</option>
+                <option value="raceRodian">Bothan</option>
+                <option value="raceTrandoshan">Droid</option>
+                <option value="raceTwilek">Gand</option>
+                <option value="raceWookie">Wookie</option>
+            </select>
+        </div>
+        <div id="characterCareer"></div>
+        <div id="characterTree"></div>
+    </div>
+    
+    <div id="characterAttribute">
+		<div id="soakAttribute"></div>
+        <div id="woundThreshold"></div>
+        <div id="strainThreshold"></div>
+        <div id="meleeDefense"></div>
+        <div id="rangedDefense"></div>
+    </div>
+
     <div id="characteristicStat">
-	    <div id="brawn"><input class="charStat" type="text" name="brawn"></div>
+	    <div id="brawn"><input type="text" name="brawn"></div>
         <div id="agility"><input type="text" name="agility"></div>
         <div id="intellect"><input type="text" name="intellect"></div>
         <div id="cunning"><input type="text" name="cunning"></div>
@@ -162,6 +187,11 @@
                 <div class="results"></div>
             </div>
         </div>
+    </div>
+    
+    <div id="xpBlocks">
+    	<div id="totalXp"></div>
+        <div id="availableXp"></div>
     </div>
     
 </div>

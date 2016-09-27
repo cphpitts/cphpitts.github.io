@@ -91,3 +91,71 @@ div#generalSkills {
 div#knowledgeSkills {
     margin-top: 44px;
 }
+
+div#characterBasics {
+    position: absolute;
+    top: 48px;
+    left: 118px;
+    width: 612px;
+    height: 123px;
+}
+
+div#characterName input {
+    margin-left: 162px;
+    width: 400px;
+    height: 25px;
+    font-size: 20px;
+}
+
+#characterRace select {
+    margin: 5px 71px;
+}
+
+div#characterAttribute {
+    /* height: 42px; */
+    width: 812px;
+    position: absolute;
+    top: 213px;
+    left: 134px;
+}
+
+#characterAttribute div {
+    width: 83px;
+    height: 51px;
+    float: left;
+    margin-right: 118px;
+    font-size: 41px;
+    text-align: center;
+    line-height: 45px;
+}
+
+#characterAttribute div:first-child {
+    width: 165px;
+    margin-right: 34px;
+}
+
+div#meleeDefense, div#rangedDefense {
+    margin-right: 0px;
+}
+
+div#xpBlocks {
+    position: absolute;
+    top: 1224px;
+    left: 122px;
+    width: 790px;
+}
+
+#xpBlocks div {
+    width:130px;
+    height:44px;
+    font-size: 39px;
+    text-align: center;
+}
+
+div#totalXp {
+    float: left;
+}
+
+div#availableXp {
+    float: right;
+}

@@ -10,14 +10,8 @@ var intellectEl = document.querySelector('#intellect input');
 var cunningEl = document.querySelector('#cunning input');
 var willpowerEl = document.querySelector('#willpower input');
 var presenceEl = document.querySelector('#presence input');
-var soakEl = document.getElementById('soakAttribute');
-var woundEl = document.getElementById('woundThreshold');
-var strainEl = document.getElementById('strainThreshold');
-var meleeDefenseEl = document.getElementById('meleeDefense');
-var rangedDefenseEl = document.getElementById('rangedDefense');
-var totalXpEl = document.getElementById('totalXp');
-var availableXpEl = document.getElementById('availableXp');
-var usedXp = 0;
+
+
 
 function baseStats() {
 	selectedRace = raceEl.value;
@@ -57,6 +51,9 @@ function baseStats() {
 	presenceEl.value = raceStatsEl.presence;
 	modifyResults();	
 }
+
+
+
 
 
 var brawnSkills = [1,16,22,24];
@@ -156,10 +153,6 @@ function modifyResults() {
 			 allResults[presenceSkills[i]].innerHTML += '<div class="yellowDie"></div>';
 		}
 	}
-	woundEl.innerHTML = Number(raceStatsEl.wound) + Number(brawnEl.value);
-	strainEl.innerHTML = Number(raceStatsEl.strain) + Number(willpowerEl.value);
-	totalXpEl.innerHTML = raceStatsEl.xp;
-	availableXpEl.innerHTML = Number(raceStatsEl.xp) - usedXp;
 }
 
 
