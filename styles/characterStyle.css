@@ -159,3 +159,11 @@ div#totalXp {
 div#availableXp {
     float: right;
 }
+
+#characterCareer select {
+    margin: 6px 71px;
+}
+
+#characterSpecialty select {
+    margin: 7px 113px;
+}

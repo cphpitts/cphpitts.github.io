@@ -67,6 +67,8 @@ var willpowerSkills = [3,8,21];
 var presenceSkills = [2,5,9,12];
 
 
+var i, j;
+
 var allSkills = document.querySelectorAll('#characterSkills input');
 var allResults = document.querySelectorAll('.results');
 
@@ -168,7 +170,6 @@ var specialtyContainer = document.getElementById('characterSpecialty');
 
 function selectCareer() {
 	var chosenCareer = chosenCareerEl.value;
-	
 	switch(chosenCareer) {
 		case "careerBounty":
 			specialtyContainer.innerHTML = '<select><option value="bountyAssassin">Assassin</option><option value="bountyGadgeteer">Gadgeteer</option><option value="bountySurvivalist">Survivalist</option></select>';
@@ -176,25 +177,17 @@ function selectCareer() {
 		case "careerColonist":
 			specialtyContainer.innerHTML = '<select><option value="colonistDoctor">Doctor</option><option value="colonistPolitico">Politico</option><option value="colonistScholar">Scholar</option></select>';
 			break;
+		case "careerExplorer":
+			specialtyContainer.innerHTML = '<select><option value="explorerFringer">Fringer</option><option value="explorerScout">Scout</option><option value="explorerTrader">Trader</option></select>';
+			break;
+		case "careerHired":
+			specialtyContainer.innerHTML = '<select><option value="hiredBodyguard">Bodyguard</option><option value="hiredMarauder">Marauder</option><option value="hiredSoldier">Soldier</option></select>';
+			break;
+		case "careerSmuggler":
+			specialtyContainer.innerHTML = '<select><option value="smugglerPilot">Smuggler</option><option value="smugglerScoundrel">Scoundrel</option><option value="smugglerThief">Thief</option></select>';
+			break;
+		case "careerTechnician":
+			specialtyContainer.innerHTML = '<select><option value="techicianMechanic">Mechanic</option><option value="technicianOutlaw">Outlaw Tech</option><option value="technicianSlicer">Slicer</option></select>';
+			break;
 	}
 }
-						
-
-
-/*
-function modifyResults() {
-	
-	
-	console.log('test');
-	console.log(greenDice);
-	console.log(yellowDice);
-	
-	resultsEl.innerHTML = "";
-	for (i=0; i < greenDice; i++) {
-		 resultsEl.innerHTML += '<div class="greenDie"></div>';
-	}
-	for (i=0; i < yellowDice; i++) {
-		 resultsEl.innerHTML += '<div class="yellowDie"></div>';
-	}
-}
-*/
