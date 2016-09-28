@@ -162,6 +162,24 @@ function modifyResults() {
 	availableXpEl.innerHTML = Number(raceStatsEl.xp) - usedXp;
 }
 
+var chosenCareerEl = document.querySelector('#characterCareer select');
+chosenCareerEl.addEventListener('change', selectCareer, false);
+var specialtyContainer = document.getElementById('characterSpecialty');
+
+function selectCareer() {
+	var chosenCareer = chosenCareerEl.value;
+	
+	switch(chosenCareer) {
+		case "careerBounty":
+			specialtyContainer.innerHTML = '<select><option value="bountyAssassin">Assassin</option><option value="bountyGadgeteer">Gadgeteer</option><option value="bountySurvivalist">Survivalist</option></select>';
+			break;
+		case "careerColonist":
+			specialtyContainer.innerHTML = '<select><option value="colonistDoctor">Doctor</option><option value="colonistPolitico">Politico</option><option value="colonistScholar">Scholar</option></select>';
+			break;
+	}
+}
+						
+
 
 /*
 function modifyResults() {
