@@ -1,0 +1,68 @@
+header {
+    width: 100%;
+    background-color: #4F7F5F;
+    height: 60px;
+}
+
+header div {
+    width: 1028px;
+    margin: auto;
+    font-size: 30px;
+    padding-top: 12px;
+    color: #232323;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    width: 1028px;
+    margin: auto;
+}
+
+main>div:first-child {background: url('images/iconProgramming.png') no-repeat;padding-left: 22px;}
+
+.projectListing {
+    width: 100%;
+    height: 20px;
+}
+
+.projectTitle {
+    width: 30%;
+    float: left;
+    text-align: right;
+    background-color: lightgray;
+    height: 30px;
+    font-size: 20px;
+    padding-right: 20px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.projectDesc {
+    width: 70%;
+    float: left;
+    display: none;
+    background-color: lightgray;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 14px 27px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.projectListing:hover .projectDesc {
+    display: block;
+}
+
+.projectTitle a {
+    color: #232323;
+    text-decoration: none;
+}
+
+.projectListing:hover .projectTitle {
+    border-radius: 10px 0px 0px 10px;
+}
