@@ -1,4 +1,4 @@
-var current_setting = "genesys";
+var current_setting = "gen";
 var result_success = 0;
 var result_advantage = 0;
 var result_triumph = 0;
