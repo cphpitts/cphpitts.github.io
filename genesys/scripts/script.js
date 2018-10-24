@@ -1,4 +1,4 @@
-var current_setting = "gen";
+var current_setting = "default";
 var result_success = 0;
 var result_advantage = 0;
 var result_triumph = 0;
@@ -66,7 +66,7 @@ function roll_dice() {
           break;
         case 6:
           dice_pool[i].src = "images/" + current_setting + "/dice_" + dice_pool[i].getAttribute("class") + "_04.png";
-          dice_advantage += 2;
+          result_advantage += 2;
           break;
         default:
           alert(die_name + " Error: " + result);
@@ -220,7 +220,7 @@ function roll_dice() {
               break;
             case 6:
             case 7:
-              dice_pool[i].src = "images/" + current_setting + "/dice_" + dice_pool[i].getAttribute("class") + "_03.png";
+              dice_pool[i].src = "images/" + current_setting + "/dice_" + dice_pool[i].getAttribute("class") + "_02.png";
               result_advantage -= 1;
               break;
             case 8:
@@ -231,7 +231,7 @@ function roll_dice() {
               break;
             case 10:
             case 11:
-              dice_pool[i].src = "images/" + current_setting + "/dice_" + dice_pool[i].getAttribute("class") + "_02.png";
+              dice_pool[i].src = "images/" + current_setting + "/dice_" + dice_pool[i].getAttribute("class") + "_05.png";
               result_advantage -= 2;
               break;
             case 12:
@@ -271,7 +271,7 @@ function roll_dice() {
     despair_value = "";
   }
 
-  results_container.innerHTML = success_failure + result_success + "<br />" + advantage_disadvantage + result_advantage + "<br />" + triumph_value + triumph_value;
+  results_container.innerHTML = success_failure + result_success + "<br />" + advantage_disadvantage + result_advantage + "<br />" + triumph_value + despair_value;
 
 
   console.log("Success: " + result_success);
