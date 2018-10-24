@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div id="base_style" class="genesys">
+      <div id="tray" class="dice_base">
+      </div>
+      <div id="die_results">
+      </div>
+      <div id="staging" class="dice_base">
+        <div onclick="add_dice('boost')">
+          <img src="images/genesys/dice_boost_01.png">
+        </div>
+        <div onclick="add_dice('ability')">
+          <img src="images/genesys/dice_ability_01.png">
+        </div>
+        <div onclick="add_dice('proficiency')">
+          <img src="images/genesys/dice_proficiency_01.png">
+        </div>
+        <div onclick="add_dice('setback')">
+          <img src="images/genesys/dice_setback_01.png">
+        </div>
+        <div onclick="add_dice('difficulty')">
+          <img src="images/genesys/dice_difficulty_01.png">
+        </div>
+        <div onclick="add_dice('challenge')">
+          <img src="images/genesys/dice_challenge_01.png">
+        </div>
+      </div>
+      <div class="controls">
+        <div class="button" onclick="roll_dice()">Roll Dice</div>
+      </div>
+      <div class="options">
+        <div class="button" onclick="change_style('genesys')">Genesys</div>
+        <div class="button" onclick="change_style('star_wars')">Star Wars</div>
+      </div>
+
+    </div>
+    <script src="scripts/script.js"></script>
+    <script>
+      initialize();
+    </script>
+  </body>
+</html>
