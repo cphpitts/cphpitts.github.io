@@ -1,42 +1,88 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Christopher Pitts: Web Development Portfolio</title>
+<html lang="en">
+    <head>
+        <meta charset="utc-8">
+        <title>Christopher Pitts</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
 
-<link href="styles/styles.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N97XVT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N97XVT');</script>
-<!-- End Google Tag Manager -->
+    <body>
+        <nav>
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-<header>
-	<div>Christopher Pitts</div>
-</header>
-<main>
-<div class="bold">Programming Projects.</div>
-<div class="projectListing">
-	<div class="projectTitle"><a href="game-sorter.html">Game Sorter v1</a></div>
-    <div class="projectDesc">
-    	<div>Game Sorter</div>
-        <div>HTML, CSS, Javascript</div>
-        <div>This program was designed to take the input of a list of the users favorite games. The user is then directed through a series of 1 v 1 comparisons in order to rank the games by preference.</div>
-        <div>&bull; User inputs a list of favorite games<br/>
-        	&bull; Program randomizes input list then places first item into new list<br />
-            &bull; Next item in original list is compared to midpoint of final list, constricting final location of compared item<br />
-            &bull; Item is compare to midpoint of new list segment<br />
-            &bull; Process is repeated until item has only 1 possible location<br />
-            &bull; Overall process is repeated for entire list<br />
-            &bull; Results are displayed in numbered list
+        <div class="break">
         </div>
-    </div>
-</div>
-</main>
-</body>
+
+        <div id="home">
+            <video autoplay muted loop id="video">
+                <source src="video/video.mov" type="video/mp4">
+                Your browser does not support HTML5 video. <!-- Error Message -->
+            </video>
+        </div>
+
+        <div class="main_text">
+            <h1>Christopher Pitts' Portfolio</h1>
+            With a background in geaphic design, e-commerce management and web developement, I offer a wide range of skills that will be a benefit to your team.
+        </div>
+
+        <!-- About Section -->
+        <div class="row" id="about">
+            <div class="column image">
+                <img src="images/development.jpg" alt="Laptop">
+            </div>
+            <div class="column">
+                <h2>About</h2>
+                <p><ul>
+                    <li><strong>E-Commerce Platforms:</strong> Magento and Miva Merchant
+Environment/Languages: MySQL, Javascript, PHP, CSS3 and HTML5</li>
+                    <li><strong>Technologies:</strong> GitHub and FileZilla</li>
+                    <li><strong>Design Software:</strong> Adobe Photoshop, Adobe Illustrator, Dreamweaver and Adobe InDesign</li>
+                    <li><strong>Social Media:</strong> Facebook, Twitter and Google+</li>
+                    <li><strong>Office Software:</strong> Microsoft Word, Microsoft Excel, Microsoft Outlook and Microsoft PowerPoint</li>
+                    <li><strong>Video Production:</strong> Adobe Premiere, Adobe After Effects, Adobe Soundbooth and Adobe Encore</li>
+                </ul></p>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="row" id="portfolio">
+            <div class="column">
+                <h2>Github</h2>
+                <p>You can view my coding projects here.<br />
+                <a href="#">GitHub</a></p>
+            </div>
+            <div class="column image">
+                <a href="https://github.com/cphpitts/" target="_blank"><img src="images/GitHub.png" alt="GitHub Portfolio"></a>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="row" id="contact">
+            <div class="column image">
+                <img src="images/Contact.jpg" alt="Contact Me">
+            </div>
+            <div class="column">
+                <h2>Contact</h2>
+                <form action="" method="GET">
+                    <label>Name:</label>
+                        <input type="text" id="contactName" name="contactName" placeholder="Please enter your name">
+                    <label>Email:</label>
+                        <input type="text" id="email" name="Email" placeholder="Please enter your email address">
+                    <label>Message</label>
+                        <input type="text" id="message" name="message" placeholder="Write your message">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; Christopher Pitts</p>
+        </footer>
+
+    </body>
 </html>
