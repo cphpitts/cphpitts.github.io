@@ -10,28 +10,29 @@ $('#closeForm').click(function() {
 });
 
 $("#submitForm").click(function() {
-    console.log('hello there');
-    console.log($("#contactName").val());
+    var validated = true;
     if($("#contactName").val()=="") {
-        console.log('yes');
         $("#contactName").popover('show');
+        validated = false;
     } else {
         $("#contactName").popover('hide');
     };
     if($("#email").val()=="") {
-        console.log('yes');
         $("#email").popover('show');
+        validated = false;
     } else {
         $("#email").popover('hide');
     };
     if($("#message").val()=="") {
-        console.log('yes');
         $("#message").popover('show');
+        validated = false;
     } else {
         $("#message").popover('hide');
     };
-    $('#contactForm').css("display", "none");
-    $('#contactIcon').css("display", "block");
+    if (validated) {
+        $('#contactForm').css("display", "none");
+        $('#contactIcon').css("display", "block");
+    }
 });
 
 $("nav a").click(function(){
