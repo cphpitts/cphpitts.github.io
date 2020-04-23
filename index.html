@@ -4,6 +4,10 @@
         <meta charset="utc-8">
         <title>Christopher Pitts</title>
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        
     </head>
 
     <body>
@@ -28,6 +32,32 @@
             <h1>Christopher Pitts' Portfolio</h1>
             With a background in geaphic design, e-commerce management and web developement, I offer a wide range of skills that will be a benefit to your team.
         </div>
+
+        <!-- SLIDESHOW -->
+        <div id="slideshow-container">
+            <div class="mySlides fader">
+                <img src="images/slide1.jpeg" style="width: 100%;">
+                <div class="text">10 years experience with HTML, CSS and Javascript</div>
+            </div>
+            <div class="mySlides fader">
+                <img src="images/slide2.png" style="width: 100%;">
+                <div class="text">Knowledgeable in Python and Data Analysis</div>
+            </div>
+            <div class="mySlides fader">
+                <img src="images/slide3.jpg" style="width: 100%;">
+                <div class="text">Able to use database technologies</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+        </div>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <!-- END SLIDESHOW -->
 
         <!-- About Section -->
         <div class="row" id="about">
@@ -61,22 +91,23 @@ Environment/Languages: MySQL, Javascript, PHP, CSS3 and HTML5</li>
         </div>
 
         <!-- Contact -->
-        <div class="row" id="contact">
-            <div class="column image">
-                <img src="images/Contact.jpg" alt="Contact Me">
-            </div>
-            <div class="column">
-                <h2>Contact</h2>
-                <form action="" method="GET">
-                    <label>Name:</label>
-                        <input type="text" id="contactName" name="contactName" placeholder="Please enter your name">
-                    <label>Email:</label>
-                        <input type="text" id="email" name="Email" placeholder="Please enter your email address">
-                    <label>Message</label>
-                        <input type="text" id="message" name="message" placeholder="Write your message">
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
+        <div class="column" id="contactForm">
+            <h2>Contact</h2>
+            <!-- <form action="" method="GET"> -->
+            <form >
+                <label>Name:</label>
+                    <input type="text" id="contactName" name="contactName" placeholder="Please enter your name" data-toggle="popover" data-placement="top" data-content="Please submit your name.">
+                <label>Email:</label>
+                    <input type="text" id="email" name="Email" placeholder="Please enter your email address" data-toggle="popover" data-placement="top" data-content="Please submit your email.">
+                <label>Message</label>
+                    <input type="text" id="message" name="message" placeholder="Write your message" data-toggle="popover" data-placement="top" data-content="Please submit your message.">
+                <button type="button" id="submitForm">SUBMIT </button>
+                <button type="button" id="closeForm">CLOSE</button>
+            </form>
+        </div>
+
+        <div id="contactIcon">
+            <img src="images/contact_icon.png" alt="Contact Me">
         </div>
 
         <!-- Footer Section -->
@@ -84,5 +115,9 @@ Environment/Languages: MySQL, Javascript, PHP, CSS3 and HTML5</li>
             <p>&copy; Christopher Pitts</p>
         </footer>
 
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
