@@ -1,0 +1,48 @@
+:root { /* Color palette for css */
+    --hope: #1E4C9E; /* Blue Lantern */
+    --mauve: #AD7A99;
+    --columbia: #B2CEDE;
+    --middlebg: #8CDFD6;
+    --middleb: #6DC0D5;
+    --dark-gray: #3c3c3c;
+}
+
+body {
+    background-color: var(--columbia);
+    color: var(--dark-gray);
+}
+
+.section {
+  background-color: var(--mauve);
+}
+
+.card-title {
+  background-color: var(--middleb);
+}
+
+.social {
+  background-color: var(--columbia);
+}
+
+html, body {
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content > div {
+  flex: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--mauve);
+  color: white;
+}

@@ -1,123 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utc-8">
-        <title>Christopher Pitts</title>
-        <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Christopher Pitts</title>
+  </head>
+  <body>
+    <div class="container bg-light main-content">
 
-    </head>
+      <!-- Header Section -->
+      <div class="jumbotron bg-light pb-0 mb-0">
+        <h1 class="display-4 font-weight-normal">Christopher Pitts</h1>
+        <p class="lead">Experiece in graphic design, web development, web management, programming</p>
+        <p class="lead">
+          <a class="btn btn-lg social p-2 mr-2  " href="https://github.com/cphpitts" role="button"><img src="images/github-dark.png" alt="GitHub"></a>
+          <a class="btn btn-lg social p-2" href="https://www.linkedin.com/in/cphpitts" role="button"><img src="images/linkedin-dark.png" alt="LinkedIn"></a>
+        </p>
+        <hr class="my-5">
+      </div>
 
-    <body>
-        <nav>
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="break">
-        </div>
-
-        <div id="home">
-            <video autoplay muted loop id="video">
-                <source src="video/video.mov" type="video/mp4">
-                Your browser does not support HTML5 video. <!-- Error Message -->
-            </video>
-        </div>
-
-        <div class="main_text">
-            <h1>Christopher Pitts' Portfolio</h1>
-            With a background in graphic design, e-commerce management and web developement, I offer a wide range of skills that will be a benefit to your team.
-        </div>
-
-        <!-- SLIDESHOW -->
-        <div id="slideshow-container">
-            <div class="mySlides fader">
-                <img src="images/slide1.jpeg" style="width: 100%;">
-                <div class="text">10 years experience with HTML, CSS and Javascript</div>
+      <!-- Skills -->
+      <div class="container bg-light">
+        <h3 class="section p-3">Skills</h3>
+          <div class="row mt-2">
+            <div class="col-6 bg-light">
+              <div class="card h-100">
+                <h5 class="card-title p-3 m-0">Programming Languages and Frameworks</h5>
+                <div class="card-body px-0 pb-1">
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>C#</li>
+                        <li>.Net Framework</li>
+                        <li>Javascript</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li>jQuery</li>
+                        <li>Knockout.JS</li>
+                        <li>MySQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="mySlides fader">
-                <img src="images/slide2.png" style="width: 100%;">
-                <div class="text">Knowledgeable in Python, Django and Data Analysis</div>
+            <div class="col-3 bg-light">
+              <div class="card h-100">
+                <h5 class="card-title p-3 m-0">Web Management</h5>
+                <div class="card-body px-0 pb-1">
+                  <ul>
+                    <li>Magento</li>
+                    <li>Miva Merchant</li>
+                    <li>GitHub</li>
+                    <li>Filezilla</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="mySlides fader">
-                <img src="images/slide3.jpg" style="width: 100%;">
-                <div class="text">Able to use database technologies</div>
+            <div class="col-3 bg-light">
+              <div class="card h-100">
+                <h5 class="card-title p-3 m-0">Graphic Design</h5>
+                <div class="card-body px-0 pb-1">
+                  <ul>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Dreamweaver</li>
+                    <li>Adobe InDesign</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(-1)">&#10095;</a>
-        </div>
-        <div style="text-align: center; margin-bottom: 30px;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <!-- END SLIDESHOW -->
-
-        <!-- About Section -->
-        <div class="row" id="about">
-            <div class="column image">
-                <img src="images/Development.jpg" alt="Laptop">
-            </div>
-            <div class="column">
-                <h2>About</h2>
-                <p><ul>
-                    <li><strong>E-Commerce Platforms:</strong> Magento and Miva Merchant</li>
-                      <li><strong>Environment/Languages:</strong> Python, Django, C#, .Net Framework, MySQL, Javascript,, jQuery, Knockout.JS, PHP, CSS3 and HTML5</li>
-                    <li><strong>Technologies:</strong> GitHub and FileZilla</li>
-                    <li><strong>Design Software:</strong> Adobe Photoshop, Adobe Illustrator, Dreamweaver and Adobe InDesign</li>
-                    <li><strong>Social Media:</strong> Facebook, Twitter and Google+</li>
-                    <li><strong>Office Software:</strong> Microsoft Word, Microsoft Excel, Microsoft Outlook and Microsoft PowerPoint</li>
-                    <li><strong>Video Production:</strong> Adobe Premiere, Adobe After Effects, Adobe Soundbooth and Adobe Encore</li>
-                </ul></p>
-            </div>
+          </div>
         </div>
 
-        <!-- Portfolio -->
-        <div class="row" id="portfolio">
-            <div class="column">
-                <h2>Github</h2>
-                <p>You can view my coding projects here.<br />
-                <a href="#">GitHub</a></p>
+        <!-- Projects -->
+        <div class="container projects mt-5">
+          <h3 class="section p-3">Projects</h3>
+          <div class="row">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-title p-3 m-0">
+                  <h5 class="m-0">Board Game Collection Tracker</h5>
+                  <div class="bold">Python | Django</div>
+                </div>
+                <div class="card-body">
+                  This application allows a user to track their collection of board games. Users can enter data manually as well add games from a list of the hottest games from BoardGameGeek.com. This feature uses BoardGameGeek's API which returns an XML file which is then parsed and added to the database. There is also a news page that uses BeautifulSoup to scrape and parse the newest articles from DiceTowerNews.com.
+                </div>
+              </div>
             </div>
-            <div class="column image">
-                <a href="https://github.com/cphpitts/" target="_blank"><img src="images/GitHub.png" alt="GitHub Portfolio"></a>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-title p-3 m-0">
+                  <h5 class="m-0">Theatre Website</h5>
+                  <div class="bold">C# | .Net Framework</div>
+                </div>
+                <div class="card-body">
+                  I contributed to an ongoing project to develop a new website for a small theatre in Portland, OR. My tasks including developing new features in the messages system such as a deleted messages tab and a search function, as well as modify how images are saved and displayed. I was also able to track and fix bugs in the system that dealt with managing information in the database.
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-title p-3 m-0">
+                  <h5 class="m-0">RPG Character Sheet</h5>
+                  <div class="bold">Javascript | Knockout.JS</div>
+                </div>
+                <div class="card-body">
+                  This application is a concept for a character sheet for use with a tabletop roleplaying game. It uses Knockout.js to store and modify data related to character attributes.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-title p-3 m-0">
+                  <h5 class="m-0">Virtual Tabletop</h5>
+                  <div class="bold">Javascript | Node.js | Socket.io</div>
+                </div>
+                <div class="card-body">
+                  This application is a virtual tabletop designed to be used by a roleplaying group to track die rolls and combat encounters. It uses node.js as a server system and socket.io to allow all browsers to keep all information refreshed in realtime.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Contact -->
-        <div class="column" id="contactForm">
-            <h2>Contact</h2>
-            <!-- <form action="" method="GET"> -->
-            <form >
-                <label>Name:</label>
-                    <input type="text" id="contactName" name="contactName" placeholder="Please enter your name" data-toggle="popover" data-placement="top" data-content="Please submit your name.">
-                <label>Email:</label>
-                    <input type="text" id="email" name="Email" placeholder="Please enter your email address" data-toggle="popover" data-placement="top" data-content="Please submit your email.">
-                <label>Message</label>
-                    <input type="text" id="message" name="message" placeholder="Write your message" data-toggle="popover" data-placement="top" data-content="Please submit your message.">
-                <button type="button" id="submitForm">SUBMIT </button>
-                <button type="button" id="closeForm">CLOSE</button>
-            </form>
-        </div>
+        <div class="footer w-100 p-2 mt-5">Christopher Pitts &copy;2020</div>
 
-        <div id="contactIcon">
-            <img src="images/contact_icon.png" alt="Contact Me">
-        </div>
-
-        <!-- Footer Section -->
-        <footer>
-            <p>&copy; Christopher Pitts</p>
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="scripts/script.js"></script>
-    </body>
+        <!-- Last Div -->
+        <div class="clear"></div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
