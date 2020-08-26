@@ -46,3 +46,14 @@ html, body {
   background-color: var(--mauve);
   color: white;
 }
+
+.card-body > div {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.card-body > a {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
