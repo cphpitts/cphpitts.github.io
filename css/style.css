@@ -12,16 +12,31 @@ body {
     color: var(--dark-gray);
 }
 
+/* Links */
+a {
+    color: var(--hope);
+}
 
+a:hover {
+    text-decoration: none;
+    color: var(--columbia);
+}
+/* Menu */
+.menu {
+    list-style: none;
+}
 
 .menu_item {
     width: 100%;
     background-color: white;
     text-align: center;
-    border: 1px #3c3c3c solid;
-    padding: 10px 0px;
     font-size: 11px;
     margin-right: -34px;
+}
+
+.menu_item a {
+    display: block;
+    padding: 15px 0;
 }
 
 .menu_item span {
@@ -29,6 +44,52 @@ body {
     padding-bottom: 7px;
 }
 
-.menu_item:nth-child(2), .menu_item:nth-child(3), .menu_item:nth-child(4) {
-    border-top: 0px;
+.ui-tabs-active {
+    background-color: var(--hope);
+}
+
+.ui-tabs-active a:hover{
+    color: var(--columbia);
+}
+
+.ui-tabs-active.border-btm {
+  border-bottom: 1px solid var(--hope);
+}
+
+.ui-tabs-active a {
+    color:white;
+}
+
+/* Header Icons */
+.link span {
+    min-width: 21px;
+    text-align: center;
+}
+
+/* Badge Color */
+.badge-hope {
+    background-color: var(--hope);
+}
+
+.card-body a {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card-body a:hover {
+  color: var(--columbia);
+}
+
+.border-btm{
+  border-bottom: 1px solid var(--columbia);
+}
+
+.border-columbia {
+  border-color: var(--columbia);
+}
+
+.photo {
+  border: 0px;
 }
