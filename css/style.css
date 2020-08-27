@@ -73,7 +73,7 @@ a:hover {
 
 .card-body a {
     position: absolute;
-    bottom: 0;
+    top: 0;
     margin-bottom: 15px;
     color: white;
 }
@@ -92,4 +92,14 @@ a:hover {
 
 .photo {
   border: 0px;
+}
+
+/* Experience Titles */
+.xp-title div {
+    float: left;
+}
+
+.xp-title div:first-child {
+  font-size: 44px;
+  margin-right: 20px;
 }
