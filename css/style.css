@@ -12,48 +12,23 @@ body {
     color: var(--dark-gray);
 }
 
-.section {
-  background-color: var(--mauve);
+
+
+.menu_item {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border: 1px #3c3c3c solid;
+    padding: 10px 0px;
+    font-size: 11px;
+    margin-right: -34px;
 }
 
-.card-title {
-  background-color: var(--middleb);
+.menu_item span {
+    font-size: 22px;
+    padding-bottom: 7px;
 }
 
-.social {
-  background-color: var(--columbia);
-}
-
-html, body {
-  height: 100%;
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content > div {
-  flex: 1;
-}
-
-.clear {
-  clear: both;
-}
-
-.footer {
-  text-align: center;
-  background-color: var(--mauve);
-  color: white;
-}
-
-.card-body > div {
-  position: relative;
-  margin-bottom: 35px;
-}
-
-.card-body > a {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 20px;
+.menu_item:nth-child(2), .menu_item:nth-child(3), .menu_item:nth-child(4) {
+    border-top: 0px;
 }
