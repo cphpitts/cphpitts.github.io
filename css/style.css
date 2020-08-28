@@ -1,14 +1,17 @@
 :root { /* Color palette for css */
     --hope: #1E4C9E; /* Blue Lantern */
     --mauve: #AD7A99;
-    --columbia: #B2CEDE;
+    --columbia: #70A4C2;
     --middlebg: #8CDFD6;
     --middleb: #6DC0D5;
     --dark-gray: #3c3c3c;
+    --coral: #FF858D;
+    --yellow: #FFCB77;
 }
 
 body {
     background-color: var(--columbia);
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjNzBBNEMyIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdFQURDOCIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdFQURDOCIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg==");
     color: var(--dark-gray);
 }
 
@@ -86,8 +89,8 @@ a:hover {
   border-bottom: 1px solid var(--columbia);
 }
 
-.border-columbia {
-  border-color: var(--columbia);
+.border-accent {
+  border-color: var(--yellow);
 }
 
 .photo {
@@ -102,4 +105,15 @@ a:hover {
 .xp-title div:first-child {
   font-size: 44px;
   margin-right: 20px;
+}
+
+.underline {
+    background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, var(--yellow) 16%, var(--yellow) 41%, rgba(255,0,255,0) 41%);
+    padding: 0 0.5em 0.15em 0.2em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.accent {
+  color: #F59700;
 }
