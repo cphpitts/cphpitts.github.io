@@ -117,3 +117,6 @@ a:hover {
 .accent {
   color: #F59700;
 }
+
+/* Gif Talk */
+.carousel-item img {width: 100%}
